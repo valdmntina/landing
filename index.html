@@ -5,80 +5,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css">
   <title>Landing</title>
 </head>
 
 <body>
   <header> <!--cabecera de la pagina-->
-    <h1>GironDeportes</h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">deportes disponibles</a>
-        </li>
-        <li>
-          <a href="#">objetivos</a>
-        </li>
-        <li>
-          <a href="#publico">público</a>
-        </li>
-        <li>
-          <a href="#">más información</a>
-        </li>
-      </ul>
-    </nav>
-  </header> <!--fin de la cabecera-->
-  <main> <!--contenido principal de la pagina-->
-    <section id="inicio"> <!--primera seccion-->
-      <img src="assets/imagen de inicio.jpeg" alt="presentacion">
-    </section> <!--fin de la primera seccion-->
-    <section id="publico"> <!--segunda seccion-->
+    <div class="contenedor contenedor_encabezado">
+      <h1>GironDeportes</h1>
       <nav>
         <ul>
           <li>
-            <a href="#"><img src="assets/niños.jpeg" alt="infantil">categoria infantil</a>
+            <a href="#">deportes disponibles</a>
           </li>
           <li>
-            <a href="#"><img src="assets/adolecentes.jpeg" alt="adolecentes">categoria jovenes</a>
+            <a href="#">objetivos</a>
           </li>
           <li>
-            <a href=""><img src="assets/adultos.jpeg" alt="adultos">categoria adultos</a>
+            <a href="#publico">público</a>
+          </li>
+          <li>
+            <a href="#">más información</a>
           </li>
         </ul>
       </nav>
+    </div>
+  </header> <!--fin de la cabecera-->
+
+  <main> <!--contenido principal de la pagina-->
+    <section id="inicio"> <!--primera seccion-->
+      <div class="container">
+        <img src="assets/imagen de inicio.jpeg" alt="presentacion" class="imagen_de_inicio ">
+      </div>
+    </section> <!--fin de la primera seccion-->
+
+    <!-- Sección publico -->
+    <section id="publico" class="section"> <!--segunda seccion-->
+      <div class="seccion_publico container">
+        <div>
+          <a href="#" class="publico__item">
+            <img src="assets/niños.jpeg" alt="infantil" class="publico__img">
+            <span class="publico__texto">categoria infantil</span>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="publico__item">
+            <img src="assets/adolecentes.jpeg" alt="adolecentes" class="publico__img">
+            <span class="publico__texto">categoria jovenes</span>
+          </a>
+        </div>
+        <div>
+          <a href="" class="publico__item">
+            <img src="assets/adultos.jpeg" alt="adultos" class="publico__img">
+            <span class="publico__texto">categoria adultos</span>
+          </a>
+        </div>
+      </div>
     </section> <!--fin de la segunda seccion-->
-    <section> <!--tercera seccion-->
-      <div>
-        <article>
-          <h2>donde encontrarnos</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.3874798518095!2d-73.16704399999999!3d7.0809979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683e89d74cb11f%3A0x7d5e0f990533da24!2sCentro%20Industrial%20de%20Mantenimiento%20Integral%20CIMI%20-%20SENA%20Servicio%20Nacional%20de%20Aprendizaje!5e0!3m2!1ses-419!2sco!4v1707599372016!5m2!1ses-419!2sco"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <!--link usado para poner una direccion especifica en google maps-->
-        </article>
+
+    <section id="mapa" class="section"> <!--tercera seccion-->
+      <div class="container mapa_contenedor">
+
+        <div class="mapa_caja">
+          <h2 class="mapa__titulo">
+            donde
+            <br>
+            encontrarnos
+          </h2>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.3874798518095!2d-73.16704399999999!3d7.0809979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683e89d74cb11f%3A0x7d5e0f990533da24!2sCentro%20Industrial%20de%20Mantenimiento%20Integral%20CIMI%20-%20SENA%20Servicio%20Nacional%20de%20Aprendizaje!5e0!3m2!1ses-419!2sco!4v1707599372016!5m2!1ses-419!2sco"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!--link usado para poner una direccion especifica en google maps-->
+
       </div>
     </section> <!--fin de la tercera seccion-->
+
     <section> <!--cuarta seccion-->
-      <div>
+      <div class="trabajo_equipo">
         <h2>trabajo en equipo</h2>
         <img src="assets/trabajo en equipo.jpeg" alt="">
       </div>
-      <div>
+      <div class="trabajo_equipo_texto">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime laborum, quos quis animi corrupti
           repudiandae ipsam similique qui! Ab esse quod suscipit recusandae maxime soluta optio ipsa impedit neque
           error.</p>
       </div>
-      <div>
+      <div class="disciplina_jovenes">
         <h2>disciplina en jovenes</h2>
         <img src="assets/disciplina en equipo.jpeg" alt="">
       </div>
     </section> <!--fin de la cuarta seccion-->
+
     <section> <!--quinta seccion-->
       <h2>video testimonio de trabajadores</h2>
       <img src="assets/testimonio.jpeg" alt="">
     </section> <!--fin de la quinta seccion-->
   </main>
+
   <footer> <!--pie de pagina-->
     <i class="bi bi-instagram"></i>
     <i class="bi bi-whatsapp"></i>

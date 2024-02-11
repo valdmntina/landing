@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} /*el * indica que lo ingresado se le aplica a toda la pagina*/
+
+body{
+  background: #dfd2d2;
+  font-family: 'Abril Fatface', serif;
+}
+
+header{
+  background: #dca1a1;
+}
+
+section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+img{
+  width: 120px;
+} /*tamaño de las imagenes de la pagina*/
+
+.imagen_de_inicio{
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  align-items: center;
+}/*tamaño de la primera imagen de la pagina*/
+
+/*seccion numero dos*/
+
+.seccion_publico{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top:40px;
+}
+.publico__item{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-decoration: none;
+}
+.publico__img{
+  margin: 0 auto;
+}
+.publico__texto{
+  font-size: 1.5rem;
+  
+}
+
+/*seccion numero tres*/
+
+.mapa_contenedor{
+  position: relative;
+}
+
+.mapa_caja{
+  background: #f2f2f2;
+  display: inline-block;
+  position: absolute;
+  margin-top: -30px;
+  right: 40%;
+  border: solid 4px #c1c1c1;
+  border-radius: 14px;
+}
+
+.mapa__titulo{
+  padding: 20px 80px;
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+/*cabecera de la pagina y titulo de la pagina*/
+
+.contenedor{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contenedor_encabezado{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+header > nav{
+  display: flex;
+  justify-content: space-between; /*para que lado se envia el menu*/
+  align-items: center; /*con esto se alinea en la mitad de la barra, no queda pegado al techo*/
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*encabezado de la pagina*/
+
+ul{
+    display: flex;
+    gap: 4rem; /*para que no se peguen*/
+    align-items: center;
+    list-style: none;
+} 
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/*seccion numero cuatro*/
