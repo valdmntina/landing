@@ -117,4 +117,46 @@ ul li a{
     font-size: 1.5rem;
 }
 
-/*seccion numero cuatro*/
+/*seccion numero cuatro
+
+#rara{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trabajo_equipo{
+  background: #f2f2f2;
+  display: inline-block;
+  position: absolute;
+  margin-top: -30px;
+  right: 40%;
+  border: solid 4px #c1c1c1;
+  border-radius: 14px;
+}
+
+.equipito{
+
+}*/
+
+/*seccion numero cinco*/
+
+.caja_testimonio{
+  background: #f2f2f2;
+  display: inline-block;
+  position: absolute;
+  margin-top: 200px;
+  right: 40%;
+  border: solid 4px #c1c1c1;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.video{
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: 100px;
+  width: 90%;
+  align-items: center;
+}
