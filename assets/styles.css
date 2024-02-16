@@ -5,12 +5,16 @@
 } /*el * indica que lo ingresado se le aplica a toda la pagina*/
 
 body{
-  background: #dfd2d2;
+  background: #ffffff;
   font-family: 'Abril Fatface', serif;
 }
 
 header{
   background: #dca1a1;
+}
+
+.texto_encabezado:hover{
+  color: #e7c3c3;
 }
 
 section{
@@ -117,27 +121,48 @@ ul li a{
     font-size: 1.5rem;
 }
 
-/*seccion numero cuatro
+/*seccion numero cuatro*/
+
 
 #rara{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  width: 40%;
+  margin: auto;
+  text-align: center;
 }
 
-.trabajo_equipo{
+.equipo_fulvo {
   background: #f2f2f2;
   display: inline-block;
   position: absolute;
-  margin-top: -30px;
-  right: 40%;
+  margin-top: -20px;
+  margin-left: -50px;
+  border: solid 4px #c1c1c1;
+  border-radius: 14px;
+}
+
+.disciplina_cero{
+  background: #f2f2f2;
+  display: inline-block;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -50px;
   border: solid 4px #c1c1c1;
   border-radius: 14px;
 }
 
 .equipito{
+  display: flex;
+  width: 250px;
+}
 
-}*/
+.fulvo_sentados{
+  display: flex;
+  width: 250px;
+}
+
+
 
 /*seccion numero cinco*/
 
@@ -146,6 +171,7 @@ ul li a{
   display: inline-block;
   position: absolute;
   margin-top: 200px;
+  margin-right: 55px;
   right: 40%;
   border: solid 4px #c1c1c1;
   border-radius: 14px;
@@ -156,7 +182,35 @@ ul li a{
   display: block;
   margin-top: 20px;
   margin-left: auto;
-  margin-right: 100px;
-  width: 90%;
+  margin-right: auto;
+  width: 1100px;
   align-items: center;
+}
+
+/*footer*/
+
+.pie_pagina{
+  background-color: #dca1a1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.apps{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.botones{
+  display: flex;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  justify-content: space-evenly;
+  
+}
+
+.botones :hover{
+  color: #e7c3c3;
 }
